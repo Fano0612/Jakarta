@@ -1,0 +1,210 @@
+                @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+                #titlex {
+                    color: aquamarine;
+                }
+                
+                aside {
+                    width: 300px;
+                    flex-shrink: 0;
+                    padding-left: 15px;
+                    margin-left: 15px;
+                    float: right;
+                    font-style: italic;
+                }
+                
+                #More {
+                    text-align: center;
+                }
+                
+                .content,
+                .contentx {
+                    flex-grow: 1;
+                    background-color: rgb(255, 255, 255);
+                }
+                
+                #history,
+                #profile {
+                    display: flex;
+                    flex-grow: 1;
+                }
+                
+                #historyt,
+                #profilet,
+                #aboutt {
+                    background-color: rgba(255, 255, 255, 0.451);
+                    padding: 10px;
+                    border: 2px solid rgba(255, 255, 255, 0.451);
+                    color: black;
+                    font-weight: bold;
+                }
+                
+                #text1paragraph,
+                #text1carousel,
+                #text2paragraph,
+                #text2carousel,
+                #text3paragraph,
+                #text3carousel,
+                #text4paragraph,
+                #text4carousel {
+                    background-color: rgba(255, 255, 255, 0.619);
+                    padding: 10px;
+                    border: 2px solid rgba(255, 255, 255, 0.619);
+                    color: black;
+                    font-weight: bold;
+                }
+                
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: "Asap", sans-serif;
+                }
+                
+                .BackgroundIMG {
+                    background-image: url("Ondel.jpg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: auto;
+                    max-width: 100%;
+                    background-attachment: fixed;
+                }
+                
+                section.w-100 h-100 d-flex align-items-end text-white p-lg-4 p-2 {
+                    background: linear-gradient(transparent 60%);
+                    opacity: 0.8;
+                }
+                
+                section {
+                    min-height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                section .container {
+                    margin: 100px;
+                }
+                
+                section .container {
+                    margin: 100px;
+                }
+                
+                section h1 {
+                    font-size: 3rem;
+                    margin: 20px;
+                }
+                
+                section h2 {
+                    font-size: 40px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                
+                section .text-container {
+                    display: flex;
+                }
+                
+                section .text-container .text-box {
+                    margin: 20px;
+                    padding: 20px;
+                    background: #00c2cb;
+                }
+                
+                section .text-container .text-box h3 {
+                    font-size: 30px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+                
+                @media (max-width: 900px) {
+                    section h1 {
+                        font-size: 2rem;
+                        text-align: center;
+                    }
+                    section .text-container {
+                        flex-direction: column;
+                    }
+                }
+                
+                .reveal {
+                    position: relative;
+                    opacity: 0;
+                }
+                
+                .reveal.active {
+                    opacity: 1;
+                }
+                
+                .active.fade-bottom {
+                    animation: fade-bottom 1s ease-in;
+                }
+                
+                .active.fade-left {
+                    animation: fade-left 1s ease-in;
+                }
+                
+                .active.fade-right {
+                    animation: fade-right 1s ease-in;
+                }
+                
+                @keyframes fade-bottom {
+                    0% {
+                        transform: translateY(50px);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+                
+                @keyframes fade-left {
+                    0% {
+                        transform: translateX(-100px);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+                
+                @keyframes fade-right {
+                    0% {
+                        transform: translateX(100px);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+                
+                .reveal {
+                    position: relative;
+                    transform: translateY(150px);
+                    opacity: 0;
+                    transition: 1s all ease;
+                }
+                
+                .reveal.active {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+                
+                footer {
+                    text-align: center;
+                    padding: 3px;
+                    background-color: rgb(0, 100, 100);
+                    color: white;
+                }
+                
+                header {
+                    padding: 10px;
+                    text-align: center;
+                    background: rgb(0, 151, 151);
+                    color: white;
+                    font-size: 30px;
+                }
